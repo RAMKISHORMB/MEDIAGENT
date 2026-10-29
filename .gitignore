@@ -1,0 +1,66 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+backend/.venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node.js dependencies
+node_modules/
+
+# Frontend build output
+dist/
+build/
+
+# Local IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local test artifacts
+.pytest_cache/
+</writing>
+
+Save the file and close Notepad.
+
+### 2.2 Verify the file
+
+Run:
+
+```cmd
+type .gitignore
+```
+
+Then run:
+
+```cmd
+git status --short
+```
+
+**Important:** The ignore file prevents new staging of matching files; it does not remove secrets that were already committed. Your repository has no commits yet, so we can establish these protections before the first commit.
+
+### 2.3 Check the dataset
+
+Your `data` directory contains `DDI_data.csv`. We should keep it only if its source and usage permissions allow redistribution.
+
+For now, **don't stage or commit anything**. Send me the output of both verification commands, and we'll inspect the files before uploading.

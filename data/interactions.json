@@ -1,0 +1,24 @@
+{
+  "dataset_type": "synthetic_test_fixtures",
+  "description": "Synthetic examples for software testing only. Not a verified clinical drug-interaction database.",
+  "interactions": [
+    {
+      "drug_a": "warfarin",
+      "drug_b": "ibuprofen",
+      "severity": "high",
+      "message": "Potential interaction: combining these medicines may increase bleeding risk. Confirm with a pharmacist or clinician."
+    },
+    {
+      "drug_a": "warfarin",
+      "drug_b": "aspirin",
+      "severity": "high",
+      "message": "Potential interaction: combining these medicines may increase bleeding risk. Confirm with a pharmacist or clinician."
+    },
+    {
+      "drug_a": "aspirin",
+      "drug_b": "ibuprofen",
+      "severity": "moderate",
+      "message": "Potential interaction: taking these medicines together may increase side-effect risks. Ask a pharmacist or clinician."
+    }
+  ]
+}
